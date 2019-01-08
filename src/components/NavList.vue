@@ -32,6 +32,8 @@ export default {
 nav {
   overflow-x: scroll;
   overflow-y: hidden;
+  /* fix iOS 滚动不平滑 */
+  -webkit-overflow-scrolling : touch;
 
   ul {
     margin: 0;
