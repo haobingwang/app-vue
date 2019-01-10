@@ -4,6 +4,11 @@ module.exports = {
   devServer: {
     proxy: {
       // 开发环境中，将以 /api 开头的请求，重定向到局域网或者测试服务器上的数据服务
+      // http://43.254.153.111:9007/api/news/info?id=25C4E36E290D1642F9655899F89F9D26
+      '/api/news': {
+        target: 'http://172.16.201.47:8081',
+        changeOrigin: true
+      },
       '/api': {
         target: 'http://172.16.201.47:8080',
         changeOrigin: true
