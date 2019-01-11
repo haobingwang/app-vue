@@ -5,6 +5,7 @@ import store from './store'
 import 'normalize.css'
 import './plugins/element.js'
 import './styles/main.scss'
+import './icons/index.js'
 
 // 在创建 Vue 实例之前全局定义过滤器
 import * as filters from './filters'
