@@ -23,3 +23,10 @@
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
+
+.scrollable-wrap {
+  /*必须显式定义高度*/
+  overflow: auto;
+  /* fix iOS 滚动不平滑 */
+  -webkit-overflow-scrolling : touch;
+}
