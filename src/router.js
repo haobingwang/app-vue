@@ -4,7 +4,7 @@ import Home from './views/Home.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
@@ -23,3 +23,10 @@ export default new Router({
     }
   ]
 })
+
+// 重新初始化滚动条高度
+router.afterEach((to, from, next) => {
+  window.scrollTo(0, 0)
+})
+
+export default router
